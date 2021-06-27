@@ -10,7 +10,7 @@ access_token = "1402794152484540420-GecGKrXoDFrRwQPRnHuC1BH2TFuwfY"
 access_token_secret = "eZR5WCyMwndh69TkPx0eZjKY5zlbohXKEanZM0iSx9Nqb"
 
 # Arquivo de saída para armazenar tweets coletados
-out = open('tweets_coletados.txt' , 'W')
+out = open('tweets_coletados.txt' , 'w')
 
 # Implementa classe para conexão com Twitter
 
@@ -28,7 +28,7 @@ class MyStreamListener(StreamListener):
 if __name__ == '__main__':
   m = MyStreamListener()
   auth = OAuthHandler(consumer_key, consumer_secret)
-  aut.set_access_token(access_token, access_token_secret)
+  auth.set_access_token(access_token, access_token_secret)
 
   stream = Stream(auth, m)
-  stream.filter(tracker=["cpi_da_covid"])
+  stream.filter(track = ["cpi_da_covid"])
