@@ -31,4 +31,4 @@ if __name__ == '__main__':
   aut.set_access_token(access_token, access_token_secret)
 
   stream = Stream(auth, m)
-  stream.filter(tracker=["cpi"])
+  stream.filter(tracker=["cpi_da_covid"])
