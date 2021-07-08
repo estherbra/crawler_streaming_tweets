@@ -3,12 +3,11 @@ import json
 from tweepy import OAuthHandler , Stream , StreamListener
 
 # Cadastra as chaves de acesso de acesso
-consumer_key = "74gun9KeeO5A6NfEhZIzTkBRF"
-consumer_secret = "jn8xv0FjZV1Eumdrm0jTVzPQiZUQ7TXneDFsdHo0qqeA13uES8"
+consumer_key = ***
+consumer_secret = ***
 
-access_token = "1402794152484540420-GecGKrXoDFrRwQPRnHuC1BH2TFuwfY"
-access_token_secret = "eZR5WCyMwndh69TkPx0eZjKY5zlbohXKEanZM0iSx9Nqb"
-
+access_token = ***
+access_token_secret = ***
 # Arquivo de saída para armazenar tweets coletados
 out = open('tweets_coletados.txt' , 'w')
 
